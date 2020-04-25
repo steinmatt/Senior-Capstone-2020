@@ -19,7 +19,7 @@ ser.parity = serial.PARITY_NONE #set parity check: no parity
 ser.stopbits = serial.STOPBITS_ONE # set # of stop bits: 1 
 
 # Second: Import picture 
-img = np.asarray(Image.open('sample-picture.jpg'))
+img = np.fromfile('sample-picture.jpg')
 img = np.ndarray.flatten(img) 
 
 # Third: Split Flattened picture 128/8 = 16 byte chunks. 
