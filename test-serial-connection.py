@@ -13,7 +13,7 @@ This must be changed to the port used for connection of the device.
 
 ser = serial.Serial() 
 ser.baudrate = 115200 
-#ser.port = "/dev/ttyUSB7"
+ser.port = "/dev/cu.usbserial-AL03XDEJ"
 ser.bytesize = serial.EIGHTBITS #number of bits per bytes
 ser.parity = serial.PARITY_NONE #set parity check: no parity
 ser.stopbits = serial.STOPBITS_ONE # set # of stop bits: 1 
